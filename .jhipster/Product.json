@@ -1,0 +1,46 @@
+{
+  "name": "Product",
+  "fields": [
+    {
+      "fieldName": "productId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descroption",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stock",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "review",
+      "otherEntityRelationshipName": "product",
+      "relationshipName": "review",
+      "otherEntityField": "productId"
+    }
+  ],
+  "changelogDate": "20200720150214",
+  "entityTableName": "product",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication"
+}
